@@ -7,6 +7,6 @@ go: "1.11"
 matrix:
   include:
     - go: "1.10"
-    - os: linux
+      os: linux
 env: CGO_ENABLED=0
 script: echo haha
