@@ -9,4 +9,9 @@ matrix:
     - go: "1.10"
       os: linux
 env: CGO_ENABLED=0
-script: echo haha
+jobs:
+  include:
+    - stage: build
+      script: echo build
+    - stage: deploy
+      script: echo deploy
