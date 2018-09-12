@@ -11,7 +11,7 @@ matrix:
 env: CGO_ENABLED=0
 jobs:
   include:
-    - stage: build
-      script: echo build
+    - stage: coverage
+      script: echo coverage
     - stage: deploy
       script: echo deploy
