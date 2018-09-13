@@ -15,3 +15,4 @@ jobs:
     - stage: deploy
       script: echo deploy
       if: type = push
+script: echo test
