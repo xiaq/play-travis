@@ -13,8 +13,11 @@ jobs:
       script: echo coverage
       if: type = push
       os: linux
-    - os: osx
+    - stage: coverage
+      script: echo coverage
+      if: type = push
+      os: osx
     - stage: deploy
-      script: echo deploy
+      script: echo deploying for branch = $TRAVIS_BRANCH
       if: type = push
 script: echo test
