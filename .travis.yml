@@ -13,10 +13,7 @@ jobs:
       script: echo coverage
       if: type = push
       os: linux
-    - stage: coverage
-      script: echo coverage
-      if: type = push
-      os: osx
+    - os: osx
     - stage: deploy
       script: echo deploy
       if: type = push
