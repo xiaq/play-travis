@@ -11,5 +11,7 @@ jobs:
   include:
     - stage: coverage
       script: echo coverage
+      if: type = push
     - stage: deploy
       script: echo deploy
+      if: type = push
